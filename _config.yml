@@ -1,0 +1,11 @@
+name: Chiel Kunkels
+markdown: redcarpet
+pygments: true
+permalink: /:title/
+
+exclude: ['vendor', 'Gemfile', 'Gemfile.lock']
+
+relative_permalinks: false
+
+redcarpet:
+  extensions: ['smart']
