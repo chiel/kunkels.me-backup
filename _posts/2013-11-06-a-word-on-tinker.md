@@ -73,10 +73,14 @@ Thanks for reading.
 
 `:wq`
 
+`:e`: forgot to mention, if you're into using IRC, there's also a channel
+[#tinker.io on freenode][tinkerirc]. Feel free to drop in there to talk, too!
+
 [tinker]: https://github.com/chielkunkels/tinker
 [rewrite]: https://github.com/tinker
 [jsfiddle]: http://jsfiddle.net/
 [jsbin]: http://jsbin.com/
 [tinkerio]: http://tinker.io/
 [twitter]: https://twitter.com/chielkunkels
+[tinkerirc]: irc://irc.freenode.net:6667/tinker.io
 
