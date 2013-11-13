@@ -1,3 +1,4 @@
+url: http://kunkels.me
 markdown: redcarpet
 pygments: true
 permalink: /:title/
