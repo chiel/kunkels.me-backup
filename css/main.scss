@@ -44,9 +44,9 @@ pre {
 	margin: 18px -48px;
 	padding: 18px 48px;
 	&:before {
-		content: '<';
+		content: '{';
 		position: absolute;
-		top: 0;
+		top: 9px;
 		left: 12px;
 		color: #eee;
 		font-size: 48px;
