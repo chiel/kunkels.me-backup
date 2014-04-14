@@ -37,9 +37,11 @@ code {
 
 pre {
 	margin: 0;
+	white-space: pre;
 }
 
 .highlight {
+	overflow: auto;
 	position: relative;
 	margin: 18px -48px;
 	padding: 18px 48px;
