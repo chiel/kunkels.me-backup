@@ -207,6 +207,9 @@ Thanks for reading and until next time, when we'll tackle `git`.
 
 `:wq`
 
+`:e`: The next article in the series is (finally) out. Read it
+[here]({% post_url 2014-08-16-dotfiles-101-git %}).
+
 [bashrc]: https://github.com/chielkunkels/dotfiles/blob/master/.bashrc
 [bash-variables]: http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
 [git-completion]: https://github.com/git/git/tree/master/contrib/completion
