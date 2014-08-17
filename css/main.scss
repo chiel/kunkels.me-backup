@@ -5,7 +5,6 @@ $contentWidth: 40em;
 $contentPadding: 48px;
 
 html {
-	border-top: 6px solid #444;
 	background: #f9f9f9;
 	font-family: merriweather, georgia, serif;
 	font-size: 18px;
@@ -16,7 +15,16 @@ html {
 
 body {
 	margin: 0 auto;
-	padding: 0 0 50px;
+	padding: 6px 0 60px;
+	&:before {
+		content: '';
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-top: 6px solid #e80c7a;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,6 +59,18 @@ hr {
 	margin: 30px auto;
 	border: 0;
 	border-bottom: 1px dashed #ccc;
+}
+
+a {
+	color: #444;
+	-webkit-transition: color .2s ease-in-out;
+	-mox-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+	&:hover {
+		color: #e80c7a;
+	}
 }
 
 code {
