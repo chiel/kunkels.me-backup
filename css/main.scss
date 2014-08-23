@@ -5,7 +5,7 @@ $contentWidth: 40em;
 $contentPadding: 48px;
 
 html {
-	background: #f9f9f9;
+	background: #fff;
 	font-family: merriweather, georgia, serif;
 	font-size: 18px;
 	font-weight: 300;
@@ -56,7 +56,7 @@ ol, ul {
 }
 
 hr {
-	margin: 30px auto;
+	margin: 30px auto 108px;
 	border: 0;
 	border-bottom: 1px dashed #ccc;
 }
@@ -87,20 +87,22 @@ pre {
 	position: relative;
 	margin: 36px 0;
 	padding: 18px 0;
-	&:before {
-		content: '{';
-		position: absolute;
-		top: 12px;
-		left: 12px;
-		color: #eee;
-		font-size: 48px;
-		font-family: 'bitstream vera sans mono', menlo, monospace;
-		line-height: 48px;
-	}
+	background: #f9f9f9;
 	pre {
+		position: relative;
 		max-width: $contentWidth;
 		margin: 0 auto;
 		padding: 0 $contentPadding;
+		&:before {
+			content: '{';
+			position: absolute;
+			top: -6px;
+			left: 0;
+			color: #eee;
+			font-size: 48px;
+			font-family: 'bitstream vera sans mono', menlo, monospace;
+			line-height: 48px;
+		}
 	}
 }
 
