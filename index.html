@@ -4,7 +4,10 @@ title: Chiel Kunkels
 ---
 
 <section class="index">
-	<h1>Journal</h1>
+	{% capture my_include %}{% include about.md %}{% endcapture %}
+	{{ my_include | markdownify }}
+
+	<h2>Journal</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
 			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
