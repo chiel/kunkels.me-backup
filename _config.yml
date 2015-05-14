@@ -1,11 +1,10 @@
+title: Chiel Kunkels
+description: >
+  Personal site of Chiel Kunkels, all-round developer.
 url: http://kunkels.me
 markdown: redcarpet
-pygments: true
+highlighter: 'rouge'
 permalink: /:title/
 
-exclude: ['vendor', 'Gemfile', 'Gemfile.lock']
-
-relative_permalinks: false
-
 redcarpet:
-  extensions: ['smart']
+  extensions: [ 'smart' ]
