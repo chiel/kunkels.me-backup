@@ -2,6 +2,7 @@
 ---
 @charset "utf-8";
 
+$easing: cubic-bezier(0, 1, .5, 1);
 $contentWidth: 40em;
 $contentPadding: 48px;
 $line-height: 36px;
@@ -70,14 +71,36 @@ hr {
 }
 
 a {
+	position: relative;
 	color: #444;
-	-webkit-transition: color .2s ease-in-out;
-	-mox-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+	text-decoration: none;
+	-webkit-transition: color .4s $easing;
+	-mox-transition: color .4s $easing;
+	-ms-transition: color .4s $easing;
+	-o-transition: color .4s $easing;
+	transition: color .4s $easing;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: -2px;
+		right: -2px;
+		bottom: 2px;
+		height: 1px;
+		background: #444;
+		-webkit-transition: transform .4s $easing;
+		-mox-transition: transform .4s $easing;
+		-ms-transition: transform .4s $easing;
+		-o-transition: transform .4s $easing;
+		transition: transform .4s $easing;
+	}
+
 	&:hover {
 		color: #e80c7a;
+
+		&:before {
+			transform: translateY(2px);
+		}
 	}
 }
 
