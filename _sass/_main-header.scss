@@ -17,6 +17,10 @@
 		float: left;
 	}
 
+	.nav-primary {
+		float: right;
+	}
+
 	&:after {
 		content: '';
 		position: absolute;
