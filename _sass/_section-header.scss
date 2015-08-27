@@ -1,0 +1,62 @@
+.section-header {
+	overflow: hidden;
+	position: relative;
+	margin: 108px 0;
+	padding: 90px 0;
+	text-align: center;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(63, 77, 103, .7);
+	}
+
+	h2 {
+		position: relative;
+		z-index: 3;
+		display: inline-block;
+		margin: 0;
+		padding: 0 12px;
+		color: #fff;
+		animation: animMasthead .4s ease-in-out backwards paused;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	&.in-view h2 {
+		animation-play-state: running;
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			right: 50%;
+			bottom: 5px;
+			width: 0;
+			height: 1px;
+			background: #fff;
+			animation: animWidth .4s ease-in-out .4s forwards;
+		}
+
+		&:after {
+			left: 50%;
+			right: auto;
+		}
+	}
+}
+
+.section-header-bg {
+	position: absolute;
+	z-index: 1;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	margin: 0;
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	background: transparent no-repeat center / cover;
+}
