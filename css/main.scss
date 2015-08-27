@@ -175,6 +175,16 @@ blockquote {
 	margin-top: $line-height * 3;
 }
 
+.posts {
+	padding-left: 48px;
+	list-style: none;
+
+	span {
+		color: #ccc;
+		font-size: 12px;
+	}
+}
+
 .meta {
 	margin: ($line-height * 3) auto 0;
 	font-size: 12px;
