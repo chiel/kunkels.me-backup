@@ -2,17 +2,18 @@
 ---
 @charset "utf-8";
 
-@import 'syntax';
-
 $contentWidth: 40em;
 $contentPadding: 48px;
+$line-height: 36px;
+
+@import 'syntax';
 
 html {
 	background: #fff;
 	font-family: merriweather, georgia, serif;
 	font-size: 18px;
 	font-weight: 300;
-	line-height: 36px;
+	line-height: $line-height;
 	color: #444;
 }
 
@@ -38,28 +39,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	margin: 0 0 72px;
+	margin: 0 0 ($line-height * 2);
 	font-size: 36px;
 }
 
 h2 {
-	margin: 108px 0 36px;
+	margin: ($line-height * 3) 0 $line-height;
+}
+
+h3 {
+	margin: ($line-height * 3) 0 $line-height;
 }
 
 p {
 	max-width: $contentWidth;
-	margin: 0 auto 30px;
+	margin: 0 auto $line-height;
 	padding: 0 $contentPadding;
 }
 
 ol, ul {
 	max-width: $contentWidth;
-	margin: 0 auto 36px;
+	margin: 0 auto $line-height;
 	padding: 0 $contentPadding 0 $contentPadding + 48;
 }
 
 hr {
-	margin: 30px auto 108px;
+	margin: $line-height auto ($line-height * 3);
 	border: 0;
 	border-bottom: 1px dashed #ccc;
 }
@@ -88,14 +93,16 @@ pre {
 .highlight {
 	overflow: auto;
 	position: relative;
-	margin: 36px 0;
+	margin: $line-height 0;
 	padding: 18px 0;
 	background: #f9f9f9;
+
 	pre {
 		position: relative;
 		max-width: $contentWidth;
 		margin: 0 auto;
 		padding: 0 $contentPadding;
+
 		&:before {
 			content: '{';
 			position: absolute;
@@ -111,8 +118,8 @@ pre {
 
 blockquote {
 	position: relative;
-	margin: 18px -48px;
-	padding: 18px 48px;
+	margin: $line-height 0;
+	padding: ($line-height / 2) 0;
 	background: #fff;
 	font-style: italic;
 	&:before {
@@ -134,11 +141,16 @@ blockquote {
 }
 
 .index, .post {
-	margin-top: 144px;
+	margin-top: $line-height * 3;
 }
+
 .meta {
-	margin: 0 auto;
+	margin: ($line-height * 3) auto 0;
 	font-size: 12px;
 	font-style: italic;
 	text-align: center;
+
+	+ h2, + h3, + blockquote {
+		margin-top: 0;
+	}
 }
