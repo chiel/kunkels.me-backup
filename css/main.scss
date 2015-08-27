@@ -8,6 +8,8 @@ $contentPadding: 48px;
 $line-height: 36px;
 
 @import 'animations';
+@import 'logotype';
+@import 'main-header';
 @import 'masthead';
 @import 'section-header';
 @import 'syntax';
@@ -22,17 +24,14 @@ html {
 }
 
 body {
+	margin: 0 auto 90px;
+	padding: 0;
+}
+
+.wrap {
+	max-width: $contentWidth;
 	margin: 0 auto;
-	padding: 6px 0 60px;
-	&:before {
-		content: '';
-		position: fixed;
-		z-index: 4;
-		top: 0;
-		left: 0;
-		width: 100%;
-		border-top: 6px solid #e80c7a;
-	}
+	padding: 0 $contentPadding;
 }
 
 h1, h2, h3, h4, h5, h6 {

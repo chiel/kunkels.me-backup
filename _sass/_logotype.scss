@@ -1,0 +1,35 @@
+.logotype {
+	padding: 0;
+	font-weight: 700;
+
+	a {
+		color: #444;
+		text-decoration: none;
+		-webkit-transition: color 2s $easing;
+		-mox-transition: color 2s $easing;
+		-ms-transition: color 2s $easing;
+		-o-transition: color 2s $easing;
+		transition: color 2s $easing;
+
+		&:before {
+			content: none;
+		}
+	}
+
+	span:first-child {
+		color: #e80c7a;
+		-webkit-transition: color 2s $easing;
+		-mox-transition: color 2s $easing;
+		-ms-transition: color 2s $easing;
+		-o-transition: color 2s $easing;
+		transition: color 2s $easing;
+	}
+
+	a:hover {
+		color: #e80c7a;
+
+		span:first-child {
+			color: #444;
+		}
+	}
+}
