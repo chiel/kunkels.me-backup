@@ -144,22 +144,26 @@ blockquote {
 	position: relative;
 	margin: $line-height 0;
 	padding: ($line-height / 2) 0;
-	background: #fff;
+	background: #f9f9f9;
 	font-style: italic;
-	&:before {
-		content: '"';
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		color: #eee;
-		font-size: 72px;
-		font-family: 'georgia', 'times new roman', 'times', serif;
-		line-height: 72px;
-	}
-	p {
-		margin: 18px 0 0;
+
+	> p {
+		max-width: $contentWidth;
+		margin: 18px auto 0;
+
 		&:first-child {
+			position: relative;
 			margin-top: 0;
+
+			&:before {
+				content: '“';
+				position: absolute;
+				top: -6px;
+				left: 0;
+				color: #eee;
+				font-size: 72px;
+				line-height: 72px;
+			}
 		}
 	}
 }
