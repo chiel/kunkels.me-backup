@@ -1,0 +1,32 @@
+---
+layout: default
+title: Resumé
+---
+
+<section class="masthead" data-parallax>
+	<figure class="masthead-bg" style="background-image:url(/img/masthead-2.jpg);" data-parallax-bg></figure>
+	<div class="masthead-content" data-parallax-fg>
+		<h1>Chiel Kunkels&rsquo; resumé</h1>
+	</div>
+</section>
+
+<section class="index">
+	{% capture about %}{% include about.md %}{% endcapture %}
+	{{ about | markdownify }}
+
+	<header class="section-header" data-inview>
+		<figure class="section-header-bg" style="background-image:url(/img/bg-work-ethic.jpg);"></figure>
+		<h2>Values & Skills</h2>
+	</header>
+
+	{% capture values %}{% include values_skills.md %}{% endcapture %}
+	{{ values | markdownify }}
+
+	<header class="section-header" data-inview>
+		<figure class="section-header-bg" style="background-image:url(/img/bg-work-experience.jpg);"></figure>
+		<h2>Work experience</h2>
+	</header>
+
+	{% capture work_experience %}{% include work_experience.md %}{% endcapture %}
+	{{ work_experience | markdownify }}
+</section>

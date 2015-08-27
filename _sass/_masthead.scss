@@ -1,0 +1,63 @@
+.masthead {
+	overflow: hidden;
+	position: relative;
+	height: 720px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 3;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 6px;
+		background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .1));
+	}
+}
+
+.masthead-bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	margin: 0;
+	background: transparent no-repeat center / cover;
+	backface-visibility: hidden;
+}
+
+.masthead-content {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: 6px;
+	text-align: center;
+	backface-visibility: hidden;
+	animation: animMasthead .4s ease-in-out .5s backwards;
+
+	h1 {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		padding: 0 12px;
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			right: 50%;
+			bottom: 0;
+			width: 0;
+			height: 1px;
+			background: #444;
+			animation: animWidth .4s ease-in-out .9s forwards;
+		}
+
+		&:after {
+			left: 50%;
+			right: auto;
+		}
+	}
+}

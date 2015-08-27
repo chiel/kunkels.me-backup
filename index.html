@@ -2,14 +2,30 @@
 layout: default
 ---
 
-<section class="index">
-	{% capture my_include %}{% include about.md %}{% endcapture %}
-	{{ my_include | markdownify }}
+<section class="masthead" data-parallax>
+	<figure class="masthead-bg" style="background-image:url(/img/masthead-1.jpg);" data-parallax-bg></figure>
+	<div class="masthead-content" data-parallax-fg>
+		<h1>Hi there, I'm Chiel.</h1>
+	</div>
+</section>
 
-	<h2>Journal</h2>
+<section class="index">
+	{% capture about %}{% include about.md %}{% endcapture %}
+	{{ about | markdownify }}
+
+	<p class="btn-wrap"><a href="/resume/" class="btn">View my resumé</a></p>
+
+	<header class="section-header" data-inview>
+		<figure class="section-header-bg" style="background-image:url(/img/bg-journal.jpg);"></figure>
+		<h2>Journal</h2>
+	</header>
+
 	<ul class="posts">
 		{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<span>&mdash; published on <time datetime="{{ post.date }}">{{ post.date | date: "%A, %B %-d, %Y" }}</time></span>
+			</li>
 		{% endfor %}
 	</ul>
 </section>
