@@ -2,9 +2,16 @@
 layout: default
 ---
 
+<section class="masthead" data-parallax>
+	<figure class="masthead-bg" style="background-image:url(/img/masthead-1.jpg);" data-parallax-bg></figure>
+	<div class="masthead-content" data-parallax-fg>
+		<h1>Hi there, I'm Chiel.</h1>
+	</div>
+</section>
+
 <section class="index">
-	{% capture my_include %}{% include about.md %}{% endcapture %}
-	{{ my_include | markdownify }}
+	{% capture about %}{% include about.md %}{% endcapture %}
+	{{ about | markdownify }}
 
 	<h2>Journal</h2>
 	<ul class="posts">
