@@ -1,8 +1,8 @@
 .section-header {
 	overflow: hidden;
 	position: relative;
-	margin: 108px 0;
-	padding: 90px 0;
+	margin: ($line-height * 2) 0;
+	padding: ($line-height * 1.5) 0;
 	text-align: center;
 
 	&:before {
@@ -23,7 +23,7 @@
 		margin: 0;
 		padding: 0 12px;
 		color: #fff;
-		animation: animMasthead .4s ease-in-out backwards paused;
+		animation: animHeader .4s ease-in-out backwards paused;
 		-webkit-font-smoothing: antialiased;
 	}
 
@@ -34,11 +34,11 @@
 			content: '';
 			position: absolute;
 			right: 50%;
-			bottom: 5px;
+			bottom: 2px;
 			width: 0;
 			height: 1px;
 			background: #fff;
-			animation: animWidth .4s ease-in-out .4s forwards;
+			animation: animUnderline .4s ease-in-out .4s forwards;
 		}
 
 		&:after {

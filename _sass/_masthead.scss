@@ -1,7 +1,8 @@
 .masthead {
 	overflow: hidden;
 	position: relative;
-	height: 720px;
+	height: 100vh;
+	max-height: 720px;
 
 	&:after {
 		content: '';
@@ -36,13 +37,14 @@
 	margin-top: 6px;
 	text-align: center;
 	backface-visibility: hidden;
-	animation: animMasthead .4s ease-in-out .5s backwards;
+	animation: animHeader .4s ease-in-out .5s backwards;
 
 	h1 {
 		position: relative;
 		display: inline-block;
 		margin: 0;
 		padding: 0 12px;
+		color: #444;
 
 		&:before, &:after {
 			content: '';
@@ -52,7 +54,7 @@
 			width: 0;
 			height: 1px;
 			background: #444;
-			animation: animWidth .4s ease-in-out .9s forwards;
+			animation: animUnderline .4s ease-in-out .9s forwards;
 		}
 
 		&:after {

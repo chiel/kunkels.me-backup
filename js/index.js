@@ -29,9 +29,10 @@ var Parallax = function(el){
 
 	var bg = el.querySelector('[data-parallax-bg]');
 	var fg = el.querySelector('[data-parallax-fg]');
+	var r = bg.getBoundingClientRect();
+	var duration = Math.min(Math.round(Math.max(window.innerHeight, r.bottom - r.top) * .6), 500);
 	var queued = false;
 	var scrollTop;
-	var r;
 
 	var paint = function(){
 		queued = false;
@@ -40,7 +41,7 @@ var Parallax = function(el){
 
 		bg.style.transform = 'translate3d(0, ' + Math.round(scrollTop / 3) + 'px, 0)';
 		fg.style.transform = 'translate3d(0, ' + Math.round(scrollTop / 2) + 'px, 0)';
-		fg.style.opacity = (1 / 500 * (500 - scrollTop)).toFixed(2);
+		fg.style.opacity = (1 / duration * (duration - scrollTop)).toFixed(2);
 	};
 
 	window.addEventListener('scroll', function(){

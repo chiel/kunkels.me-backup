@@ -4,26 +4,22 @@
 
 .btn {
 	display: inline-block;
-	height: 32px;
 	margin: 0 auto;
 	padding: 0 24px;
-	border: 2px solid #e80c7a;
+	border: 1px solid #e80c7a;
 	border-radius: 2px;
 	background: #fff;
 	color: #e80c7a;
-	font: 400 12px open sans, sans-serif;
-	line-height: 34px;
+	font: 400 10px open sans, sans-serif;
+	line-height: 28px;
 	letter-spacing: .1em;
 	-webkit-transition: background-color .4s $easing, color .4s $easing;
 	-mox-transition: background-color .4s $easing, color .4s $easing;
 	-ms-transition: background-color .4s $easing, color .4s $easing;
 	-o-transition: background-color .4s $easing, color .4s $easing;
 	transition: background-color .4s $easing, color .4s $easing;
+	text-decoration: none;
 	text-transform: uppercase;
-
-	&:before {
-		content: none;
-	}
 
 	&:hover {
 		background: #e80c7a;

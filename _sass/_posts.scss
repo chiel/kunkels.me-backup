@@ -1,0 +1,14 @@
+.posts {
+	padding-left: $content-padding;
+	list-style: none;
+	text-align: center;
+
+	li {
+		margin-top: $line-height;
+	}
+
+	span {
+		display: block;
+		color: #aaa;
+	}
+}

@@ -24,7 +24,7 @@ layout: default
 		{% for post in site.posts %}
 			<li>
 				<a href="{{ post.url }}">{{ post.title }}</a>
-				<span>&mdash; published on <time datetime="{{ post.date }}">{{ post.date | date: "%A, %B %-d, %Y" }}</time></span>
+				<span><time datetime="{{ post.date }}">{{ post.date | date: "%A, %B %-d, %Y" }}</time></span>
 			</li>
 		{% endfor %}
 	</ul>
