@@ -15,7 +15,7 @@ For CSS I try to embrace the [SMACSS][smacss] methodology along with either
 drawn to the latter due to the modular fashion in which features are
 implemented.
 
-My colleagues have dubbed me **"the gitfather"** due to my extensive knowledge
+My colleagues have dubbed me *"the gitfather"* due to my extensive knowledge
 of [Git][git], its workflows, my obsession with a clean history and willingness
 to educate others on these topics.
 
