@@ -10,9 +10,9 @@ I joined Lifely as a frontend developer, contributing to the development of
 their latest project, [Part-up][partup], a startup that enables people to create
 short-term, project-based teams.
 
-All development for Part-up is being done in the [Meteor][meteor] framework, a
-fairly young JavaScript framework which takes care of both front-- and backend,
-as well as build tooling.
+All development for Part-up is being done in [Meteor][meteor], a fairly young
+JavaScript framework which takes care of both front-- and backend, as well as
+build tooling.
 
 [lifely]: https://lifely.nl/
 [partup]: https://beta.part-up.com/
