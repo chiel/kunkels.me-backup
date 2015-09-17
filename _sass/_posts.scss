@@ -11,4 +11,22 @@
 		display: block;
 		color: #aaa;
 	}
+
+	@media (min-width: $bp){
+		padding-left: $content-padding-l;
+		text-align: left;
+
+		li {
+			margin-top: 0;
+		}
+
+		span {
+			display: inline;
+			font-size: 12px;
+
+			&:before {
+				content: '— published on ';
+			}
+		}
+	}
 }

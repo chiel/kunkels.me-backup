@@ -1,7 +1,7 @@
 .section-header {
 	overflow: hidden;
 	position: relative;
-	margin: ($line-height * 2) 0;
+	margin: ($line-height * 2) 0 $content-padding;
 	padding: ($line-height * 1.5) 0;
 	text-align: center;
 
@@ -59,4 +59,25 @@
 	-webkit-filter: blur(2px);
 	filter: blur(2px);
 	background: transparent no-repeat center / cover;
+}
+
+@media (min-width: $bp){
+	.section-header {
+		margin: ($line-height-l * 2) 0;
+		padding: ($line-height-l * 2.5) 0;
+
+		h2 {
+			font-size: 27px;
+
+			&:before, &:after {
+				bottom: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: $bpl){
+	.section-header {
+		margin: ($line-height-l * 3) 0 ($line-height-l * 2);
+	}
 }

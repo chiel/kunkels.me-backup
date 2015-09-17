@@ -63,3 +63,13 @@
 		}
 	}
 }
+
+@media (min-width: $bp){
+	.masthead-content h1 {
+		font-size: 36px;
+
+		&:before, &:after {
+			bottom: -6px;
+		}
+	}
+}
